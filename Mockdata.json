@@ -1,0 +1,13 @@
+const news = {[
+   "newMessage": {
+    "message": "Hi das ist eine neue Nachricht von mir. Alles läuft gut!",
+    "picture": "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+   },
+
+   "newMessageTwo": {
+    "message": "Hey das ist die zweite Nachricht. Alles super bei mir!",
+    "picture": "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg"
+   }
+
+]  
+}
