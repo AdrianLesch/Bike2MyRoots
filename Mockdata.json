@@ -7,5 +7,10 @@
       "newMessageTwo": {
          "message": "Hey, das ist die zweite Nachricht. Alles super bei mir!",
          "picture": "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg"
+      },
+
+      "newMessageThree": {
+         "message": "Hey, das ist die dritte Nachricht. Alles immernoch super bei mir!",
+         "picture": "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg"
       }
    }
