@@ -14,6 +14,35 @@ async function fetchNews() {
     }
 }
 
+
+function updateNews(data) {
+    const newsbox = document.getElementById("newsbox");
+
+    // Clear previous content in the newsbox to avoid duplicates
+    newsbox.innerHTML = "";
+
+    // Loop through each key in the data object and treat it as a new entry
+    for (let key in data) {
+        if (data.hasOwnProperty(key)) {
+            let entry = data[key]; // Get the entry (e.g., newMessage, newMessageTwo, etc.)
+
+            // Create a new paragraph element for the message
+            const messageElement = document.createElement("p");
+            messageElement.innerText = entry.message;
+
+            // Optionally display the image if needed
+            const imageElement = document.createElement("img");
+            imageElement.src = entry.picture;
+            imageElement.alt = "News Image";
+            imageElement.style.width = "100px"; // Example styling
+
+            // Append the message and image to the newsbox
+            newsbox.appendChild(messageElement);
+            newsbox.appendChild(imageElement);
+        }
+    }
+}
+/*
 function updateNews(data) {
     const newsbox = document.getElementById("newsbox");
 
@@ -46,6 +75,7 @@ function updateNews(data) {
         }
     });
 }
+*/
 
 // Poll for new data every 5 seconds
 setInterval(fetchNews, 5000);
