@@ -1,8 +1,28 @@
-#navBar {
-    background-color: white;
-}
+/*Farben: 
+
+E9F5DB
+CFE1B9
+B5C99A
+97A97C
+87986A
+718355
+
+*/
+
 
 #bikelogo {
-    height: 150px;
-    width: 200px;
+    max-height: 95px;
+    max-width: 75px;
+}
+
+#navBarNav {
+    background-color: white;
+    display: flex;
+}
+
+#instaFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
 }
