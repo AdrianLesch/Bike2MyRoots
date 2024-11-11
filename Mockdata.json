@@ -8,5 +8,10 @@
       "title": "Update on Route",
       "message": "The route has been updated with new landmarks.",
       "picture": "./resources/images/Bike.jpeg"
+   },
+   "newsItem3": {
+      "title": "Hallo mal wieder",
+      "message": "Es geht mir gut. Bla boalaslsadlas",
+      "picture": "./resources/images/Bike.jpeg"
    }
 }
