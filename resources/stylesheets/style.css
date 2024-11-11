@@ -16,7 +16,7 @@
 body {
     background-color: var(--light-green);
     color: var(--text-dark);
-    font-family: Arial, sans-serif;
+    font-family: "Lora", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {

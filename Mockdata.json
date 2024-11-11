@@ -1,31 +1,12 @@
-   {
-      "newMessage": {
-         "message": "Hi, das ist eine neue Nachricht von mir. Alles läuft gut!",
-         "picture": "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      },
-   
-      "newMessageTwo": {
-         "message": "Hey, das ist die zweite Nachricht. Alles super bei mir!",
-         "picture": "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg"
-      },
-
-      "newMessageThree": {
-         "message": "Hey, das ist die dritte Nachricht. Alles immernoch super bei mir!",
-         "picture": "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg"
-      },
-
-      "newMessageFour": {
-         "message": "Hey, das ist die vierte Nachricht. Alles immernoch super bei mir!",
-         "picture": "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg"
-      },
-
-      "newMessageFive": {
-         "message": "Hey, das ist die fünfte Nachricht. Alles immernoch super bei mir!",
-         "picture": "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg"
-      },
-
-      "newMessageSix": {
-         "message": "Hey, das ist die sechste Nachricht. Alles immernoch super bei mir!",
-         "picture": "https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg"
-      }
+{
+   "newsItem1": {
+      "title": "New Event",
+      "message": "We are launching a new event!",
+      "picture": "./resources/images/Bike.jpeg"
+   },
+   "newsItem2": {
+      "title": "Update on Route",
+      "message": "The route has been updated with new landmarks.",
+      "picture": "./resources/images/Bike.jpeg"
    }
+}
