@@ -68,6 +68,20 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--dark-olive);
 }
 
+  /* Styling for the images within the list items */
+  .list-item-image {
+    width: 10rem; 
+    height: 10rem; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  .list-group-item {
+    display: flex;
+    align-items: center;
+  }
+
 /* Link Styles */
 a {
     color: var(--medium-green); /* Primary link color for good readability */
