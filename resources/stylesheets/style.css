@@ -1,28 +1,150 @@
-/*Farben: 
+/* Color Scheme */
+:root {
+    --light-green: #E9F5DB;
+    --pale-green: #CFE1B9;
+    --sage-green: #B5C99A;
+    --medium-green: #97A97C;
+    --dark-olive: #87986A;
+    --deep-green: #718355;
 
-E9F5DB
-CFE1B9
-B5C99A
-97A97C
-87986A
-718355
-
-*/
-
-
-#bikelogo {
-    max-height: 95px;
-    max-width: 75px;
+    --text-dark: #333333; /* Dark text color for readability */
+    --text-light: #FFFFFF;
+    --highlight-green: #8A9A5B; /* Extra contrasting green for links and buttons */
 }
 
-#navBarNav {
-    background-color: white;
-    display: flex;
+/* General Styles */
+body {
+    background-color: var(--light-green);
+    color: var(--text-dark);
+    font-family: Arial, sans-serif;
 }
 
-#instaFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-olive);
 }
+
+/* Navbar */
+.navbar {
+    background-color: var(--medium-green);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--text-dark) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--highlight-green) !important;
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--highlight-green);
+    border: none;
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-olive);
+    color: var(--text-light);
+}
+
+/* List Item Styles */
+.list-group-item {
+    background-color: var(--pale-green); /* Light background for readability */
+    color: var(--text-dark);
+    border: 1px solid var(--medium-green); /* Subtle border for separation */
+    font-weight: 500;
+}
+
+.list-group-item:nth-child(odd) {
+    background-color: var(--light-green); /* Alternating background color */
+}
+
+.list-group-item:hover {
+    background-color: var(--medium-green); /* Darker green on hover */
+    color: var(--text-light);
+    border-color: var(--dark-olive);
+}
+
+/* Link Styles */
+a {
+    color: var(--medium-green); /* Primary link color for good readability */
+    text-decoration: none; /* Remove default underline */
+    font-weight: 600;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+    border-bottom: 2px solid transparent; /* Subtle border-bottom for underlined effect */
+}
+
+a:hover, a:focus {
+    color: var(--dark-olive); /* Darker shade on hover for emphasis */
+    border-bottom: 2px solid var(--dark-olive); /* Visible underline on hover */
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--text-dark); /* Darker color on click */
+    border-bottom: 2px solid var(--text-dark);
+}
+
+
+/* Card */
+.card {
+    background-color: var(--pale-green);
+    border: 1px solid var(--medium-green);
+}
+
+.card-title {
+    color: var(--dark-olive);
+}
+
+/* Footer */
+footer {
+    background-color: var(--deep-green);
+    color: var(--text-light);
+}
+
+footer a {
+    color: var(--light-green);
+}
+
+footer a:hover {
+    color: var(--highlight-green);
+    text-decoration: underline;
+}
+
+/* Style for the video container */
+.video-container {
+    border-radius: 15px;        /* Round the edges of the container */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  /* Add shadow around the container */
+    overflow: hidden;           /* Ensure the video stays within the rounded container */
+  }
+  
+  
+  .video-container video {
+    width: 100%;               /* Make sure the video fills the container */
+    height: auto;              /* Maintain the aspect ratio */
+  }
+
+  /* Style for Route box */
+
+  .route-map {
+    border-radius: 15px;        /* Round the edges of the iframe */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  /* Add shadow around the iframe */
+    overflow: hidden;           /* Ensure the map stays within the rounded container */
+  }
+  
+  /* Optional: Add styling for the "View in Fullscreen" button */
+  .btn-primary {
+    font-size: 1.2rem;         /* Slightly increase font size */
+    padding: 0.75rem 1.5rem;   /* Increase padding for better size */
+    border-radius: 25px;       /* Round the edges of the button */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow to the button */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn-primary:hover {
+    background-color: #5a8e68; /* Darker shade on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }

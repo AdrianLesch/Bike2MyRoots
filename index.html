@@ -1,8 +1,3 @@
-<!-- This project is my first "real" project for a friend's charity project. Beforehand I've finished the Bootstrap-Course on Codecademy
- and now I will use what I've learned to create a nice and responsive website for my friend and his awesome project! :-)-->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bike2MyRoots</title>
-    <!--Bootstrapp-CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!--Bootstrapp-CSS-->
-  <!-- My CSS-->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
   <link href="./resources/stylesheets/style.css" rel="stylesheet" type="text/css">
-  <!-- My CSS-->
 </head>
 
 <body>
@@ -24,82 +19,68 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./resources/images/LogoBike2MyRoots.jpeg" alt="Logo" id="bikelogo"
-          class="d-inline-block align-text-center">
-        Bike2MyRoots
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./resources/images/LogoBike2MyRoots.jpeg" alt="Bike2MyRoots Logo" id="bikelogo" class="img-thumbnail me-2" style="width: 50px; height: auto;">
+        <span>Bike2MyRoots</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./About.html">About</a>
-          </li>
-          <li class="nav-item"></li>
-          <a class="nav-link" href="./Route.html">Route</a>
-          </li>
-          <li class="nav-item"></li>
-          <a class="nav-link" href="./GearEquipment.html">Gear&Equipment</a>
-          </li>
-          <li class="nav-item"></li>
-          <a class="nav-link" href="./Fundraiser.html">Fundraiser</a>
-          </li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="./Index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Route.html">Route</a></li>
+          <li class="nav-item"><a class="nav-link" href="./GearEquipment.html">Gear & Equipment</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Fundraiser.html">Fundraiser</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-
   <!-- Video Section -->
-  <section class="container my-5">
-    <div class="ratio ratio-16x9">
-      <video class="embed-responsive-item" src="./resources/videos/Bike2myRoots_Trailer_Eng.mp4" autoplay muted controls></video>
+  <section class="container my-5 d-flex justify-content-center">
+    <div class="ratio ratio-16x9 w-100 video-container" style="max-width: 1440px;">
+      <video src="./resources/videos/Bike2myRoots_Trailer_Eng.mp4" autoplay muted controls></video>
     </div>
   </section>
 
-  <!--Insta-Row // About-Row-->
+  <!-- Instagram & About Section -->
   <section class="container my-5">
-    <div class="row">
+    <div class="row justify-content-around">
+      
       <!-- Instagram Feed -->
-      <div class="col-md-6" id="instaFlex">
+      <div class="col-md-4 d-flex flex-column align-items-center mb-4">
         <h2 class="text-center">Follow Me on Instagram</h2>
-        <div class="embed-responsive embed-responsive-1by1">
-          
-          <blockquote class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/bike2myroots?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            data-instgrm-version="12" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0;">
-           
-          </blockquote>
-          <script src="https://www.instagram.com/embed.js"></script>
-          <script type="text/javascript" src="https://www.embedista.com/j/instagramfeed1707.js"></script>
-        </div>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/bike2myroots"
+          data-instgrm-version="12" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0;">
+        </blockquote>
+        <script async src="https://www.instagram.com/embed.js"></script>
       </div>
-  
+
       <!-- About Section -->
-      <div id="about" class="col-md-6">
-        <div class="text-center">
-          <h2>About Bike2MyRoots</h2>
-          <p class="lead">Bike2MyRoots is a charity project focused on connecting communities through cycling and heritage
-            exploration. If you want to learn more click <a>here</a> or donate directly here:</p>
-        </div>
+      <div class="col-md-4 d-flex flex-column align-items-center text-left">
+        <h2>About Bike2MyRoots</h2>
+        <p class="lead">Bike2MyRoots is a charity project focused on connecting communities through cycling and heritage exploration. If you want to learn more about the project or the fundraiser, click <a href="./About.html">here</a> & <a href="./Fundraiser.html">here</a> or donate directly here:</p>
+        <a href="https://donate.justgiving.com/charity/eduspots/donation-amount" target="_blank" class="btn btn-primary btn-lg mb-1">Donate</a>
+        <br/>
+        <div class="col-md-4 order-md-2 mb-3 mb-md-0">
+          <img src="./resources/images/eduspots-logo-horz.svg" alt="EduSpots" class="img-fluid">
       </div>
+      </div>
+
     </div>
   </section>
 
   <!-- Newsbox Section -->
-  <section id="newsbox" class="container my-5 d-flex flex-column justify-content-center">
-    <h2 class="text-center">Latest Updates</h2>
-    <div class="row">
+  <section id="newsbox" class="container my-5">
+    <h2 class="text-center mb-4">Latest Updates</h2>
+    <div class="row justify-content-center">
+      
       <!-- News Item Card Example -->
       <div class="col-md-4">
         <div class="card mb-4">
-          <h3>News</h3>
+          <h3 class="card-header">News</h3>
           <div class="card-body">
             <h5 class="card-title">Update Title</h5>
             <p class="card-text">Brief description of the latest update or event related to the project.</p>
@@ -107,16 +88,18 @@
           </div>
         </div>
       </div>
-      <!-- Repeat the above block for each news item -->
+      
+      <!-- Additional News Item Cards can be added here -->
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-light text-center py-3">
-    <p>&copy; 2024 Bike2MyRoots | Designed by Adrian Lesch</p>
+    <p class="mb-0">&copy; 2024 Bike2MyRoots | Designed by Adrian Lesch</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

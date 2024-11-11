@@ -4,87 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundraiser</title>
-    <!--Bootstrap-Import-->
+    <title>Fundraiser - Bike2MyRoots</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--Bootstrap-Import-->
-    <!-- My CSS-->
+    <!-- Custom CSS -->
     <link href="./resources/stylesheets/style.css" rel="stylesheet" type="text/css">
-    <!-- My CSS-->
 </head>
 
 <body>
-    <!--Nav-Section-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navBar">
-        <div class="container-fluid">
-            <div class="d-flex flex-column">
-                <a class="navbar-brand" href="#">Bike2MyRoots</a>
-                <img src="./resources/images/LogoBike2MyRoots.jpeg" class="img-thumbnail" id="bikelogo"
-                    alt="Picture of a bike" />
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./resources/images/LogoBike2MyRoots.jpeg" alt="Bike2MyRoots Logo" class="img-thumbnail me-2" style="width: 50px; height: auto;">
+                <span>Bike2MyRoots</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./About.html">About</a>
-                    </li>
-                    <li class="nav-item"></li>
-                    <a class="nav-link" href="./Route.html">Route</a>
-                    </li>
-                    <li class="nav-item"></li>
-                    <a class="nav-link" href="./GearEquipment.html">Gear&Equipment</a>
-                    </li>
-                    <li class="nav-item"></li>
-                    <a class="nav-link" href="./Fundraiser.html">Fundraiser</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="./Index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Route.html">Route</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./GearEquipment.html">Gear & Equipment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Fundraiser.html">Fundraiser</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--Nav-Section-->
-    <h1>Fundraising Concept</h1>
-    <q>Little drops of water make a mighty ocean.</q>
-    <br />
-    <p>For every km cycled, €10 can be donated to reach a target of €100,000. You can contribute as:</p>
-    <ol>
-        <li>Single-ride donor : making a one-time donation.</li>
-        <li>Multiple-ride donor: making regular donations throughout the journey.</li>
-    </ol>
-    <p>When resources are pulled together, even the smallest amount of contributions can make a significant difference.
-        All your donations will be made transparent and published in a final report. Donors who wish to remain anonymous
-        will remain as such. Become part of something truly meaningful to transform the lives of many children through
-        education</p>
 
-    <h2>About <a href="https://eduspots.org/" target="_blank">EduSpots</a></h2>
-    <q>EduSpots exists to connect, train, and equip over 250 local ‘Catalysts’ – a mix of teachers, students and
-        community members – who create and sustain transformative literacy and STEM opportunities through a network of
-        50 education spaces named ‘Spots’ in Ghana and Kenya, with a focus on female empowerment and environmental
-        sustainability.</q>
-    <button><a href="https://donate.justgiving.com/charity/eduspots/donation-amount" target="_blank">Donate</a></button>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Fundraising Section -->
+        <section class="text-center">
+            <h1 class="display-5 mb-4">Fundraising Concept</h1>
+            <blockquote class="blockquote">
+                <p class="mb-4">"Little drops of water make a mighty ocean."</p>
+            </blockquote>
+            <p class="mb-4">For every km cycled, €10 can be donated to reach a target of €100,000. You can contribute as:</p>
+            <ol class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Single-ride donor: making a one-time donation.</li>
+                <li class="list-group-item">Multiple-ride donor: making regular donations throughout the journey.</li>
+            </ol>
+            <p class="mb-5">When resources are pooled together, even the smallest amount of contributions can make a significant difference. All donations will be transparent and published in a final report. Donors who wish to remain anonymous will be kept as such. Become part of something truly meaningful to transform lives through education.</p>
+        </section>
 
-    <h2>Sponsors and Partners</h2>
-    <p>A journey of this magnitude is never done solo. Its successful realization requires collective efforts from
-        friends and family both home and abroad, sponsors, generous individuals, and organizations, and last but not
-        least the kindness of countless strangers on and off the road. I hope and pray that our collective efforts bear
-        fruits for a better future.</p>
+        <!-- EduSpots Section with Image on the Right -->
+        <section class="mb-5">
+            <div class="row align-items-center text-center text-md-start">
+                <!-- Text Content -->
+                <div class="col-md-8 order-md-1">
+                    <h2>About <a href="https://eduspots.org/" target="_blank" class="link-primary">EduSpots</a></h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-4">"EduSpots exists to connect, train, and equip over 250 local ‘Catalysts’ – a mix of teachers, students, and community members – who create and sustain transformative literacy and STEM opportunities through a network of 50 education spaces named ‘Spots’ in Ghana and Kenya, with a focus on female empowerment and environmental sustainability."</p>
+                    </blockquote>
+                    <a href="https://donate.justgiving.com/charity/eduspots/donation-amount" target="_blank" class="btn btn-primary">Donate</a>
+                </div>
+                <!-- EduSpots Logo Image -->
+                <div class="col-md-4 order-md-2 mb-3 mb-md-0">
+                    <img src="./resources/images/eduspots-logo-horz.svg" alt="EduSpots" class="img-fluid">
+                </div>
+            </div>
+        </section>
 
-    <h2>Physiology Research</h2>
-    <p>As an avid sports scientist, I will objectively conduct a single-case research project to study the physiological
-        impacts of this journey on the human body. This includes measuring changes in cardiac output, resting heart
-        rate, heart wall thickness, maximal oxygen uptake, and muscle fiber composition before and after the expedition.
-    </p>
+        <!-- Sponsors and Partners Section -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Sponsors and Partners</h2>
+            <p class="text-center">A journey of this magnitude is never done solo. Its success relies on the collective efforts of friends, family, sponsors, generous individuals, organizations, and the kindness of countless strangers along the way. I hope and pray that our collective efforts will bear fruits for a brighter future.</p>
+        </section>
 
+        <!-- Physiology Research Section -->
+        <section>
+            <h2 class="text-center mb-4">Physiology Research</h2>
+            <p class="text-center">As a sports scientist, I will conduct a single-case research project to study the physiological impacts of this journey on the human body. This includes measuring changes in cardiac output, resting heart rate, heart wall thickness, maximal oxygen uptake, and muscle fiber composition before and after the expedition.</p>
+        </section>
+    </main>
+
+     <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p class="mb-0">&copy; 2024 Bike2MyRoots | Designed by Adrian Lesch</p>
+  </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
-<footer><p>&#169 Adrian Lesch 2024</p></footer>
+
 </html>
