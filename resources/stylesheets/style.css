@@ -7,9 +7,9 @@
     --dark-olive: #87986A;
     --deep-green: #718355;
 
-    --text-dark: #333333; /* Dark text color for readability */
+    --text-dark: #333333; 
     --text-light: #FFFFFF;
-    --highlight-green: #8A9A5B; /* Extra contrasting green for links and buttons */
+    --highlight-green: #8A9A5B; 
 }
 
 /* General Styles */
@@ -52,18 +52,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* List Item Styles */
 .list-group-item {
-    background-color: var(--pale-green); /* Light background for readability */
+    background-color: var(--pale-green); 
     color: var(--text-dark);
-    border: 1px solid var(--medium-green); /* Subtle border for separation */
+    border: 1px solid var(--medium-green); 
     font-weight: 500;
 }
 
 .list-group-item:nth-child(odd) {
-    background-color: var(--light-green); /* Alternating background color */
+    background-color: var(--light-green); 
 }
 
 .list-group-item:hover {
-    background-color: var(--medium-green); /* Darker green on hover */
+    background-color: var(--medium-green); 
     color: var(--text-light);
     border-color: var(--dark-olive);
 }
@@ -84,16 +84,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Link Styles */
 a {
-    color: var(--medium-green); /* Primary link color for good readability */
-    text-decoration: none; /* Remove default underline */
+    color: var(--medium-green); 
+    text-decoration: none; 
     font-weight: 600;
-    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
-    border-bottom: 2px solid transparent; /* Subtle border-bottom for underlined effect */
+    transition: color 0.3s ease, border-bottom 0.3s ease; 
+    border-bottom: 2px solid transparent; 
 }
 
 a:hover, a:focus {
-    color: var(--dark-olive); /* Darker shade on hover for emphasis */
-    border-bottom: 2px solid var(--dark-olive); /* Visible underline on hover */
+    color: var(--dark-olive); 
+    border-bottom: 2px solid var(--dark-olive); 
     text-decoration: none;
 }
 
@@ -130,35 +130,35 @@ footer a:hover {
 
 /* Style for the video container */
 .video-container {
-    border-radius: 15px;        /* Round the edges of the container */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  /* Add shadow around the container */
-    overflow: hidden;           /* Ensure the video stays within the rounded container */
+    border-radius: 15px;        
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  
+    overflow: hidden;          
   }
   
   
   .video-container video {
-    width: 100%;               /* Make sure the video fills the container */
-    height: auto;              /* Maintain the aspect ratio */
+    width: 100%;               
+    height: auto;              
   }
 
   /* Style for Route box */
 
   .route-map {
-    border-radius: 15px;        /* Round the edges of the iframe */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  /* Add shadow around the iframe */
-    overflow: hidden;           /* Ensure the map stays within the rounded container */
+    border-radius: 15px;        
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  
+    overflow: hidden;           
   }
   
-  /* Optional: Add styling for the "View in Fullscreen" button */
+
   .btn-primary {
-    font-size: 1.2rem;         /* Slightly increase font size */
-    padding: 0.75rem 1.5rem;   /* Increase padding for better size */
-    border-radius: 25px;       /* Round the edges of the button */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow to the button */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1.2rem;         
+    padding: 0.75rem 1.5rem;   
+    border-radius: 25px;       
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
   }
   
   .btn-primary:hover {
-    background-color: #5a8e68; /* Darker shade on hover */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #5a8e68; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
   }
