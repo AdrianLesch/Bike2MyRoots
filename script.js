@@ -72,3 +72,5 @@ setInterval(fetchNews, 5000);
 
 // Initial fetch when the page loads
 fetchNews();
+
+
