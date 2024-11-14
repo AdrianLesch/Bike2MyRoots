@@ -1,17 +1,7 @@
 {
    "newsItem1": {
-      "title": "New Event",
-      "message": "We are launching a new event!",
-      "picture": "./resources/images/Bike.jpeg"
-   },
-   "newsItem2": {
-      "title": "Update on Route",
-      "message": "The route has been updated with new landmarks.",
-      "picture": "./resources/images/Bike.jpeg"
-   },
-   "newsItem3": {
-      "title": "Hallo mal wieder",
-      "message": "Es geht mir gut. Bla boalaslsadlas",
+      "title": "Here we go!/Hier geht's los!",
+      "message": "I will post some amazing news here soon! / Bald werden hier tolle Nachrichten stehen!",
       "picture": "./resources/images/Bike.jpeg"
    }
 }
