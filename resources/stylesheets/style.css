@@ -162,3 +162,9 @@ footer a:hover {
     background-color: #5a8e68; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
   }
+
+  /* Bottom-Image */
+
+  img.img-fluid.rounded.shadow-sm {
+    margin-top: 1rem;
+  }
