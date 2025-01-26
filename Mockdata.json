@@ -3,5 +3,11 @@
       "title": "Here we go!/Hier geht's los!",
       "message": "I will post some amazing news here soon! / Bald werden hier tolle Nachrichten stehen!",
       "picture": "./resources/images/Bike.jpeg"
+   },
+   "newsItem2": {
+      "title": "EduSpots announced my project officially!/EduSpots hat mein Projekt offiziell angekündigt!",
+      "message": "The project with my mission is finally officially announced by EduSpots, check it out here/\nDas Projekt mit meiner Mission wurde offiziell von EduSpots angekündigt, weitere Infos findet Ihr hier:\n",
+      "link": "https://eduspots.org/meet-emmanuel-adjei-a-ghanaian-with-a-big-dream-to-cycle-from-munich-to-accra-all-in-support-of-eduspots/",
+      "picture": "./resources/images/bildb2r.jpeg"
    }
 }
