@@ -123,9 +123,22 @@
                     <label for="userMessage" class="form-label">Your Message</label>
                     <textarea class="form-control" id="userMessage" name="message" rows="4" required></textarea>
                 </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="gdprConsent" required>
+                    <label class="form-check-label" for="gdprConsent">
+                        I consent to the processing of my personal data in accordance with the privacy policy.
+                    </label>
+
+                </div>
+
+                <div>
+                    <p>By submitting this form, you agree to our <a href="ImpressumEnglisch.html"
+                            target="_blank">Privacy Policy</a>.</p>
+                </div>
                 <button type="submit" class="btn btn-primary w-100">Send Message</button>
             </form>
             <div id="formResponse" class="text-center mt-3"></div>
+
         </section>
 
         <!-- Physiology Research Section -->
@@ -141,8 +154,8 @@
     <!-- Footer -->
     <footer class="bg-dark text-light text-center py-3">
         <p class="mb-0">&copy; 2024 Bike2MyRoots | <a href="./ImpressumEnglisch.html"
-                style="text-decoration: none">Imprint</a> | <a href="https://adrian-lesch.com/" target="_blank"
-                style="text-decoration: none;">Adrian Lesch</a></p>
+                style="text-decoration: none">Imprint & Privacy Policy</a> | <a href="https://adrian-lesch.com/"
+                target="_blank" style="text-decoration: none;">Adrian Lesch</a></p>
     </footer>
 
     <button id="scrollToTopButton" class="btn btn-primary" onclick="scrollToTop()">↑ Top</button>

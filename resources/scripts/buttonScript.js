@@ -31,20 +31,11 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   };
 
   emailjs.send('BikeToMyRoots', 'template_jdsw4xl', formData)
-    .then(function (response) {
-      document.getElementById('formResponse').textContent = 'Message sent successfully!/Nachricht erfolgreich übermittelt!';
-      
-      // Auto-response
-      emailjs.send('BikeToMyRoots', 'template_1sg89qt', formData)
-        .then(function () {
-          console.log('Auto-response sent successfully!');
-        })
-        .catch(function (error) {
-          console.error('Failed to send auto-response:', error);
-        });
+    .then(function () {
+      document.getElementById('formResponse').textContent = 'Message sent successfully!/Nachricht erfolgreich versendet!';
     })
     .catch(function (error) {
-      document.getElementById('formResponse').textContent = 'Failed to send message.';
+      document.getElementById('formResponse').textContent = 'Failed to send message./Fehler beim Senden der Nachricht, bitte erneut probieren.';
       console.error(error);
     });
 

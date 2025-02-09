@@ -127,6 +127,15 @@
                     <label for="userMessage" class="form-label">Deine Nachricht</label>
                     <textarea class="form-control" id="userMessage" name="message" rows="4" required></textarea>
                 </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="gdprConsent" required>
+                    <label class="form-check-label" for="gdprConsent">
+                        Ich erkläre mich mit der Verarbeitung meiner persönlichen Daten gemäß der Datenschutzrichtlinie einverstanden.
+                    </label>
+                  </div>
+                  <div>
+                    <p>Durch das Absenden dieses Formulars stimmen Sie unserer <a href="Impressum.html" target="_blank">Datenschutzrichtlinie</a> zu.</p>
+                  </div>
                 <button type="submit" class="btn btn-primary w-100">Nachricht senden</button>
             </form>
             <div id="formResponse" class="text-center mt-3"></div>
@@ -145,7 +154,7 @@
     <!-- Footer -->
     <footer class="bg-dark text-light text-center py-3">
         <p class="mb-0">&copy; 2024 Bike2MyRoots | <a href="./Impressum.html"
-                style="text-decoration: none">Impressum</a> | <a href="https://adrian-lesch.com/" target="_blank"
+                style="text-decoration: none">Impressum & Datenschutz</a> | <a href="https://adrian-lesch.com/" target="_blank"
                 style="text-decoration: none;">Adrian Lesch</a></p>
     </footer>
 
