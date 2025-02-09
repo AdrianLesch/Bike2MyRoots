@@ -2,7 +2,7 @@ let previousEntries = [];
 
 async function fetchNews() {
     try {
-        let jsonData = await fetch("/Mockdata.json");
+        let jsonData = await fetch("/NewsData.json");
         let data = await jsonData.json();
 
         // Log the fetched data for debugging
