@@ -107,6 +107,27 @@
                 future.</p>
         </section>
 
+        <!-- Contact Form-->
+        <section class="my-5">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="userName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="userName" name="user_name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="userEmail" name="user_email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="userMessage" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="userMessage" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+            <div id="formResponse" class="text-center mt-3"></div>
+        </section>
+
         <!-- Physiology Research Section -->
         <section>
             <h2 class="text-center mb-4">Physiology Research</h2>
@@ -131,9 +152,12 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!--My Script-->
-
     <script src="./resources/scripts/buttonScript.js"></script>
-    <!--My Script-->
+    <!--E-MailJS-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init('GFU5BqzMPqNCzeX0p'); 
+    </script>
 </body>
 
 </html>

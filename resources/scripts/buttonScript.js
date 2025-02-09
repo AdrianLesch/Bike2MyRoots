@@ -18,3 +18,28 @@ window.onscroll = function () {
       behavior: "smooth",
     });
   }
+
+
+  //Contact Form Handler
+
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+  
+    // Show loading or processing status
+    const formResponse = document.getElementById("formResponse");
+    formResponse.textContent = "Sending...";
+  
+    // Send form data via EmailJS
+    emailjs.sendForm("Bike To My Roots", "template_jdsw4xl", this)
+      .then(
+        function () {
+          formResponse.textContent = "Message sent successfully!";
+          document.getElementById("contactForm").reset();
+        },
+        function (error) {
+          formResponse.textContent = "Failed to send message. Please try again.";
+          console.error("Error:", error);
+        }
+      );
+  });
+  
